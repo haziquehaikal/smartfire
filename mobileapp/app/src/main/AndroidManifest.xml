@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.picotech.smartfire">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <service android:name=".utils.FirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.Activity_Login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".activity.TestDebug" />
+        <activity android:name=".activity.test" />
+        <activity android:name=".activity.Activity_Register" />
+        <activity android:name=".activity.Activity_UpdateProfile" />
+        <activity android:name=".activity.Activity_ViewProfile" />
+        <activity android:name=".activity.Activity_Home" />
+        <activity android:name=".activity.Activity_ChangePassword" />
+        <activity android:name=".activity.Activity_FireLog" />
+        <activity android:name=".activity.Activity_Streaming" />
+        <activity android:name=".activity.Activity_Call999" />
+        <activity android:name=".activity.Activity_FireStatus" />
+        <activity android:name=".activity.Activity_Log" />
+        <activity android:name=".activity.Activity_SelectDevice" />
+        <activity android:name=".activity.Activity_Log_Details" />
+
+        <activity
+            android:name=".activity.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+    <!--<uses-permission android:name="android.permission.INTERNET"/>-->
+</manifest>

@@ -1,0 +1,20 @@
+#!/bin/bash
+sudo apt-get update;
+sudo apt-get install build-essential checkinstall;
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev;
+wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz;
+tar -zxvf Python-3.6.5.tgz;
+cd Python-3.6.5;
+./configure;
+make -j4;
+sudo make altinstall;
+sudo easy_install-3.6 pip;
+sudo pip3.6 install RPi.GPIO;
+sudo pip3.6 install websockets;
+sudo pip3.6 install schedule;
+sudo pip install urllib3;
+sudo rm -rf Python-3.6.5.tgz;
+sudo rm -rf Python-3.6.5/;
+echo "INSTALLATION DONE";
+echo "start upload the file using winSCP";
+echo "start excute file with python3.6";

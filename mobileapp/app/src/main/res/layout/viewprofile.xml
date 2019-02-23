@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp" >
+    <!--android:background="@drawable/bg2">-->
+
+    <TextView
+        android:id="@+id/profilepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profilepage"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/displayUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:layout_below="@+id/profilepage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:text="@string/username"
+            android:inputType="textPersonName"
+            android:textSize="15dp"
+            android:layout_below="@+id/displayUsername" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/displayAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner"
+            android:textColor="@color/white"
+            android:layout_below="@+id/username" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:text="@string/address"
+            android:inputType="text"
+            android:textSize="15dp"
+            android:layout_below="@+id/displayAddress">
+        </TextView>
+
+        <TextView
+            android:id="@+id/displayPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phoneNo"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_corner"
+            android:layout_below="@+id/address" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneNo"
+            android:text="@string/phoneNo"
+            android:inputType="phone"
+            android:textSize="15dp"
+            android:layout_below="@+id/displayPhoneNo">
+        </TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/updateprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/updateprofile"
+        android:layout_marginBottom="150dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_pink"/>
+
+</RelativeLayout>

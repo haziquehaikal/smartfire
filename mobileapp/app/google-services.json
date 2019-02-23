@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "33663532462",
+    "firebase_url": "https://smarthome-5b4f2.firebaseio.com",
+    "project_id": "smarthome-5b4f2",
+    "storage_bucket": "smarthome-5b4f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33663532462:android:1d35781afc390a13",
+        "android_client_info": {
+          "package_name": "com.picotech.smartfire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33663532462-lqqqderebv6nkjauo05r3acgdr46b9go.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.picotech.smartfire",
+            "certificate_hash": "14afb0093bd488d6a57f5116a4cd9d16c1b397c8"
+          }
+        },
+        {
+          "client_id": "33663532462-oksq808v6rsbmcmfamefk2frqievv3ih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTR48NoBrRRS19QUqcdGvFXCZ2_IbZufE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33663532462-oksq808v6rsbmcmfamefk2frqievv3ih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

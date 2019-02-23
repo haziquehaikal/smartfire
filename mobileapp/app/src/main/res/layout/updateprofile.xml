@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/updateprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/updateprofile"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:textSize="15sp" >
+        </EditText>
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:layout_below="@+id/name">
+        </EditText>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_no"
+            android:hint="@string/phoneNo"
+            android:inputType="phone"
+            android:textSize="15dp"
+            android:layout_below="@+id/address">
+        </EditText>
+        </android.support.design.widget.TextInputLayout>
+
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_marginBottom="8dp">-->
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/password"-->
+                <!--android:hint="@string/password"-->
+                <!--android:inputType="textPassword"-->
+                <!--android:textSize="15dp"-->
+                <!--android:layout_below="@+id/phoneNo">-->
+            <!--</EditText>-->
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/savedetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/savedetails"
+        android:textColor="@color/white"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/btn_pink"/>
+
+    <Button
+        android:id="@+id/cancelsavedetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_pink"/>
+
+</RelativeLayout>
